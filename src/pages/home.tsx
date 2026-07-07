@@ -1,16 +1,10 @@
 import cloudsImg from "../assets/clouds.jpg";
 import { ArrowRight } from "lucide-react";
-import { Show, SignInButton, SignUpButton, UserButton } from "@clerk/react";
+import { Show, UserButton } from "@clerk/react";
 import { Link } from "react-router-dom";
 import { Button } from "~/components/ui/button";
 import {
-  Code,
-  Wrench,
-  BookOpen,
-  Sparkles,
-  Sprout,
   Github,
-  Twitter,
   Instagram,
   Mail,
   MapPin,

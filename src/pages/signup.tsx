@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Button } from "~/components/ui/button";
+
 import { SignUp } from '@clerk/react'
 import PixelBlast from "~/components/PixelBlast";
 

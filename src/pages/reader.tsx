@@ -1,68 +1,26 @@
-import cloudsImg from "../assets/clouds.jpg";
-import { ArrowRight } from "lucide-react";
-import { Show, UserButton } from "@clerk/react";
 import { Link } from "react-router-dom";
 import { Button } from "~/components/ui/button";
+import { Show, RedirectToSignIn } from '@clerk/react'
 import {
   Github,
   Mail,
   MapPin,
 } from "lucide-react";
 
-function Home() {
+function Reader() {
   return (
     <>
-      <nav className="navbar">
-        {" "}
-        <Link to="/">
-          <h1 className="headerBranding">Lucider</h1>
-        </Link>{" "}
-        <Show when="signed-out">
+      <Show fallback={<RedirectToSignIn />} when="signed-in">
+        <h1>HELLOO!!! 1234567890</h1>
+        <Button>HI</Button>
+        <Link to="/">To Home</Link>
+      </Show>
 
-          {" "}<Link to="/signin">
-            <Button className="SignInButton">
-              Sign In
-            </Button>
-          </Link>{" "}
-          
-        </Show>
-        <Show when="signed-in">
-          <UserButton />
-        </Show>
-      </nav>
 
-      <div className="maintitle">
-        <h1>Organizing the world's happenings in one place.</h1>
-      </div>
 
-      <div className="centeredButtons">
-        {" "}<Link to="/reader">
-          <Button className="btnPrimary">
-            Start reading <ArrowRight size={18} />
-          </Button>
-        </Link>{" "}
-
-        
-        <button className="btnSecondary">See how it works</button>
-      </div>
-
-      <div className="maindiv">
-        <img
-          src={cloudsImg}
-          alt="Clouds"
-          style={{
-            width: "76%",
-            maxWidth: "1285px",
-            borderRadius: "20px",
-            marginTop: "70px",
-          }}
-        />
-      </div>
-
-      <div></div>
-
+      
       {/*Beginning boilerplate footer code fom v0*/}
-
+      
       <div className="footer">
         <footer className="bg-black text-white">
           <div className="max-w-6xl mx-auto px-6 py-16">
@@ -205,4 +163,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Reader;

@@ -206,7 +206,7 @@
     pointer-events: none; /* Ensure you can still click things underneath */
 }
 
-.SignInButton{
+.SignInButton {
     color: white;
     background: black;
     font:
@@ -218,7 +218,7 @@
     margin-top: 6px;
 }
 
-.signInBox{
+.signInBox {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -232,21 +232,21 @@
         sans-serif;
 }
 
-.timseufertlink-footer{
+.timseufertlink-footer {
     text-decoration: underline;
 }
 
-.footer{
+.footer {
     margin-top: 120px;
 }
 
-.maininfoLNDP{
+.maininfoLNDP {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.citationtim{
+.citationtim {
     margin-left: 180px;
     margin-right: 180px;
     margin-top: 100px;
@@ -255,7 +255,7 @@
         sans-serif;
 }
 
-.timscredits{
+.timscredits {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,20 +263,42 @@
     gap: 5px;
 }
 
-.timname{
+.timname {
     margin-top: 50px;
     font:
         1.2rem "Roboto",
         sans-serif;
 }
 
-.timdescription{
+.timdescription {
     margin-right: 45px;
 }
 
-.citationMasterDiv{
+.citationMasterDiv {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+}
+
+.resourcesMAINDIV {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 120px;
+    margin-top: 85px;
+    margin-bottom: 85px;
+}
+
+.resourcesMAINDIV h1 {
+    font-weight: bolder;
+}
+
+.resourcesMAINDIV h2 {
+    font:
+        3rem "Roboto",
+        sans-serif;
+        font-weight: bolder;
 }

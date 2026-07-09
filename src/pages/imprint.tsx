@@ -1,16 +1,13 @@
-import cloudsImg from "../assets/clouds.jpg";
-import { ArrowRight } from "lucide-react";
-import { Show, UserButton } from "@clerk/react";
 import { Link } from "react-router-dom";
+import { Show, UserButton } from "@clerk/react";
 import { Button } from "~/components/ui/button";
 import {
   Github,
   Mail,
   MapPin
 } from "lucide-react";
-import timselfie from "../assets/selfietim.jpg";
 
-function Home() {
+function Imprint() {
   return (
     <>
       <nav className="navbar">
@@ -32,59 +29,52 @@ function Home() {
         </Show>
       </nav>
 
-      <div className="maintitle">
-        <h1>Organizing the world's happenings in one place.</h1>
-      </div>
-
-      <div className="centeredButtons">
-        {" "}<Link to="/reader">
-          <Button className="btnPrimary">
-            Start reading <ArrowRight size={18} />
-          </Button>
-        </Link>{" "}
-
-        
-        <button className="btnSecondary">See how it works</button>
-      </div>
-
-      <div className="maindiv">
-        <img
-          src={cloudsImg}
-          alt="Clouds"
-          style={{
-            width: "76%",
-            maxWidth: "1285px",
-            borderRadius: "20px",
-            marginTop: "70px",
-          }}
-        />
-      </div>
-
-      <div className="maininfoLNDP">
-        <p className="citationtim">We are living in the age of AI. This brings a lot of benefits, such as faster reseach, prototyping, writing and creation. Despite these advantages, the current circumstances force us to radically rethink how we define the integrity of information around us. The Lucider project aims to minimize the flood of happenings that overruns us every day while remaining as accurate and trustworthy as possible. It's time for you to gain and maintain the insight.</p>
-      </div>
-
-      <div className="citationMasterDiv">
-        <div className="timscredits">
-          <h2 className="timname">- Tim Seufert</h2>
-          <p className="timdescription">Founder and Developer of Ludicer</p>
-        </div>
-
-        <img
-          src={timselfie}
-          alt="Selfie of Tim"
-          style={{
-          width: "10%",
-          maxWidth: "74px",
-          borderRadius: "47px",
-          marginTop: "40px",
-          marginLeft: "-20px",
-        }}/>
-      </div>
-
-
 
       
+      
+      <div className="resourcesMAINDIV">
+        <div>
+          <h2>Imprint</h2>
+        </div>
+        
+        <div>
+          <h1>Introduction</h1>
+          <h3>At Lucider, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information when you visit our website.</h3>
+        </div>
+  
+        <div>
+          <h1>Information We Collect</h1>
+          <h3>We collect minimal information from our website visitors. This may include: </h3>
+          <h3>• Usage data (such as pages visited and time spent on our website)</h3>
+          <h3>• Device information (browser type, operating system)</h3>
+          <h3>• IP address</h3>
+        </div>
+  
+        <div>
+          <h1>How We Use Your Information</h1>
+          <h3>We use the collected information to: </h3>
+          <h3>• Improve our website and services</h3>
+          <h3>• Analyze website traffic and usage patterns</h3>
+          <h3>• Maintain website security</h3>
+          <h3>• Manage users</h3>
+        </div>
+
+        <div>
+          <h1>Data Protection</h1>
+          <h3>We implement appropriate security measures to protect your information from unauthorized access, alteration, or disclosure.</h3>
+        </div>
+
+        <div>
+          <h1>Contact Us</h1>
+          <h3>If you have any questions about our Privacy Policy, please contact us.</h3>
+        </div>
+
+        <div>
+          <h1>Updates to This Privacy Policy</h1>
+          <h3>We may update this Privacy Policy from time to time. Any changes will be posted on this page.</h3>
+        </div>      
+      </div>
+
       {/*Beginning boilerplate footer code fom v0*/}
 
       <div className="footer">
@@ -165,7 +155,7 @@ function Home() {
                   </li>
                   <li>
                     <Link
-                      to="/termsofuse"
+                      to="#"
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       Terms of service
@@ -229,4 +219,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Imprint;

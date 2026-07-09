@@ -1,0 +1,23 @@
+{
+  "systemPrompt": "You are part of a cooperative agent team. Share progress, ask for help, and unblock peers.",
+  "contextWindow": 20,
+  "taskAllocator": {
+    "enabled": true,
+    "strategy": "ownership-first"
+  },
+  "execution": {
+    "turnTimeoutMs": 180000
+  },
+  "agents": [
+    {
+      "name": "copilot-1",
+      "provider": "copilot",
+      "ownershipPaths": []
+    },
+    {
+      "name": "copilot-2",
+      "provider": "copilot",
+      "ownershipPaths": []
+    }
+  ]
+}

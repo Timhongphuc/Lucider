@@ -8,6 +8,7 @@ import {
   Mail,
   MapPin,
 } from "lucide-react";
+import timselfie from "../assets/selfietim.jpg";
 
 function Home() {
   return (
@@ -59,8 +60,31 @@ function Home() {
         />
       </div>
 
-      <div></div>
+      <div className="maininfoLNDP">
+        <p className="citationtim">We are living in the age of AI. This brings a lot of benefits, such as faster reseach, prototyping, writing and creation. Despite these advantages, the current circumstances force us to radically rethink how we define the integrity of information around us. The Lucider project aims to minimize the flood of happenings that overruns us every day while remaining as accurate and trustworthy as possible. It's time for you to gain and maintain the insight.</p>
+      </div>
 
+      <div className="citationMasterDiv">
+        <div className="timscredits">
+          <h2 className="timname">- Tim Seufert</h2>
+          <p className="timdescription">Developer of Ludicer</p>
+        </div>
+
+        <img
+          src={timselfie}
+          alt="Selfie of Tim"
+          style={{
+          width: "10%",
+          maxWidth: "74px",
+          borderRadius: "47px",
+          marginTop: "40px",
+          marginLeft: "-20px",
+        }}/>
+      </div>
+
+
+
+      
       {/*Beginning boilerplate footer code fom v0*/}
 
       <div className="footer">

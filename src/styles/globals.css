@@ -239,3 +239,44 @@
 .footer{
     margin-top: 120px;
 }
+
+.maininfoLNDP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.citationtim{
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: 100px;
+    font:
+        1.5rem "Bitcount Single",
+        sans-serif;
+}
+
+.timscredits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.timname{
+    margin-top: 50px;
+    font:
+        1.2rem "Roboto",
+        sans-serif;
+}
+
+.timdescription{
+    margin-right: 45px;
+}
+
+.citationMasterDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}

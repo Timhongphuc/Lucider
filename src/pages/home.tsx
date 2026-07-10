@@ -78,7 +78,7 @@ function Home() {
           maxWidth: "74px",
           borderRadius: "47px",
           marginTop: "40px",
-          marginLeft: "-20px",
+          marginLeft: "-120px",
         }}/>
       </div>
 

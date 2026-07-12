@@ -82,6 +82,9 @@ function Home() {
         }}/>
       </div>
 
+      <div className="howItWorksInformation-1">
+        <h1>Test information about (two boxes, side by side)</h1>
+      </div>
 
 
       

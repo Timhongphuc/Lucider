@@ -302,3 +302,10 @@
         sans-serif;
         font-weight: bolder;
 }
+
+.howItWorksInformation-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}

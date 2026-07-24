@@ -44,7 +44,7 @@ function Home() {
         </Link>{" "}
 
         
-        <button className="btnSecondary">See how it works</button>
+        <Button className="btnSecondary">See how it works <ArrowRight size={18}/> </Button>
       </div>
 
       <div className="maindiv">

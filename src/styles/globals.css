@@ -309,3 +309,34 @@
     align-items: center;
     margin-top: 100px;
 }
+
+.readertitle{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-top: 100px;
+    flex-direction: column;
+    gap: 50px;
+    font-family: "Bitcount Single", sans-serif;
+    font-size: 3rem;
+    font-weight: 274;
+    margin-left: 40px;
+}
+
+.dateSwitcher{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: row;
+}
+
+.reader-date{
+    font:
+        1rem "Roboto",
+        sans-serif;
+        font-weight: bolder;    
+}
+
+.septeration-line-reader{
+    /*I have to figure this one out later then...*/
+}

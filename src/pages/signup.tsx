@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-
 import { SignUp } from '@clerk/react'
 import PixelBlast from "~/components/PixelBlast";
+import Bottombar from "~/components/bottombar";
 
 function Signup() {
   return (
@@ -34,6 +34,8 @@ function Signup() {
       <div className="signInBox">
         <SignUp />
       </div>
+
+      <Bottombar/>
     </>
   );
 }

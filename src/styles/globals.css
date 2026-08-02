@@ -331,12 +331,30 @@
 }
 
 .reader-date{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-top: auto;
+    margin-bottom: auto;
     font:
-        1rem "Roboto",
+        1rem "Bitcount Single",
         sans-serif;
-        font-weight: bolder;    
+        font-weight: 500;    
 }
 
 .septeration-line-reader{
     /*I have to figure this one out later then...*/
+}
+
+.sub-readertitle-2{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-top: 25px;
+    flex-direction: column;
+    gap: 50px;
+    font-family: "Bitcount Single", sans-serif;
+    font-size: 2rem;
+    font-weight: 274;
+    margin-left: 40px;
 }

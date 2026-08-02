@@ -42,6 +42,12 @@ function Reader() {
 
         <hr className="septeration-line-reader" />
 
+          <div className="sub-readertitle-2">
+            <h1>Politics</h1>
+          </div>
+
+        <hr className="septeration-line-reader" />
+        
         {/*Beginning boilerplate footer code fom v0*/}
 
         <div className="footer">

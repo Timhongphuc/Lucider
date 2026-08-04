@@ -328,6 +328,12 @@
     justify-content: left;
     align-items: left;
     flex-direction: row;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.dateSwitchButton{
+    border-radius: 25px;
 }
 
 .reader-date{

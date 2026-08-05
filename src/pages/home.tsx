@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 import { Button } from "~/components/ui/button";
 import timselfie from "../assets/selfietim.jpg";
 import Bottombar from "~/components/bottombar";
+import { BentoCard, BentoGrid } from "../components/ui/bento-grid"
+import { EncryptedText } from "~/components/ui/encrypted-text";
+import React from "react";
 
 function Home() {
   return (
@@ -57,7 +60,8 @@ function Home() {
       </div>
 
       <div className="maininfoLNDP">
-        <p className="citationtim">We are living in the age of AI. This brings a lot of benefits, such as faster reseach, prototyping, writing and creation. Despite these advantages, the current circumstances force us to radically rethink how we define the integrity of information around us. The Lucider project aims to minimize the flood of happenings that overruns us every day while remaining as accurate and trustworthy as possible. It's time for you to gain and maintain the insight.</p>
+        {/*<p className="citationtim">We are living in the age of AI. This brings a lot of benefits, such as faster reseach, prototyping, writing and creation. Despite these advantages, the current circumstances force us to radically rethink how we define the integrity of information around us. The Lucider project aims to minimize the flood of happenings that overruns us every day while remaining as accurate and trustworthy as possible. It's time for you to gain and maintain the insight.</p>*/}
+        <EncryptedText className="citationtim" text="We are living in the age of AI. This brings a lot of benefits, such as faster reseach, prototyping, writing and creation. Despite these advantages, the current circumstances force us to radically rethink how we define the integrity of information around us. The Lucider project aims to minimize the flood of happenings that overruns us every day while remaining as accurate and trustworthy as possible. It's time for you to gain and maintain the insight." />
       </div>
 
       <div className="citationMasterDiv">
@@ -82,7 +86,9 @@ function Home() {
         <h1>Test information about (two boxes, side by side)</h1>
       </div>
 
-
+      {/*<BentoGrid>
+        <BentoCard />
+      </BentoGrid>*/}
       
       <Bottombar/>
     </>

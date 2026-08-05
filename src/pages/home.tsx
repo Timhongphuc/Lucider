@@ -25,7 +25,9 @@ function Home() {
           
         </Show>
         <Show when="signed-in">
-          <UserButton />
+          <div className="accountbutton">
+            <UserButton/>
+          </div>  
         </Show>
       </nav>
 

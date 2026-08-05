@@ -144,7 +144,7 @@
     font-family: "Bitcount Single", sans-serif;
     font-size: 3rem;
     font-weight: 274;
-    padding: 0px 20px;
+    padding: 0px 55px;
 }
 
 .centeredButtons {
@@ -366,4 +366,16 @@
     font-size: 2rem;
     font-weight: 274;
     margin-left: 40px;
+}
+
+.accountbutton{
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+@media (max-width: 768px) {
+  .accountbutton {
+    padding-top: 15px;
+    padding-right: 40px;
+  }
 }

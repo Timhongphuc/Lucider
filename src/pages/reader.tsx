@@ -7,7 +7,7 @@ import { useUser } from '@clerk/react'
 
 function Reader() {
 
-  const { isSignedIn, user, isLoaded } = useUser()
+  const { user } = useUser()
 
   return (
     <>

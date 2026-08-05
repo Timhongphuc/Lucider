@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 type Testimonial = {
   quote: string;
   name: string;
-  designation: string;
+  designation?: string;
   src: string;
 };
 export const AnimatedTestimonials = ({

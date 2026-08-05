@@ -48,7 +48,7 @@ function generateGibberishPreservingSpaces(
 export const EncryptedText: React.FC<EncryptedTextProps> = ({
   text,
   className,
-  revealDelayMs = 5,
+  revealDelayMs = 15,
   charset = DEFAULT_CHARSET,
   flipDelayMs = 50,
   encryptedClassName,

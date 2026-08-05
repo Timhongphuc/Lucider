@@ -137,9 +137,7 @@
 }
 
 .maintitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     margin-top: 150px;
     font-family: "Bitcount Single", sans-serif;
     font-size: 3rem;
@@ -315,8 +313,8 @@
 
 .readertitle{
     display: flex;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
     margin-top: 100px;
     flex-direction: column;
     gap: 50px;
@@ -348,7 +346,8 @@
     font:
         1rem "Bitcount Single",
         sans-serif;
-        font-weight: 500;    
+        font-weight: 500;   
+    padding: 10px; 
 }
 
 .septeration-line-reader{
@@ -378,4 +377,21 @@
     padding-top: 15px;
     padding-right: 40px;
   }
+}
+
+.articleText{
+    max-width: 1120px;
+    margin-left: 10px;
+    margin-right: auto;
+    margin-top: 75px;
+    padding: 0px 55px;
+}
+
+.ainotice{
+    font:
+        0.9rem "Roboto",
+        sans-serif;
+        font-weight: 500;  
+    margin-top: -50px; 
+    color: grey;
 }

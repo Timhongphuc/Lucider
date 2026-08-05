@@ -6,6 +6,8 @@ import { Button } from "~/components/ui/button";
 import timselfie from "../assets/selfietim.jpg";
 import Bottombar from "~/components/bottombar";
 import { EncryptedText } from "~/components/ui/encrypted-text";
+import { BentoGrid, BentoCard } from "~/components/ui/bento-grid";
+import { AnimatedBeamMultipleOutputDemo } from "~/components/ui/animated-beam-multiple-inputs";
 
 function Home() {
   return (
@@ -86,9 +88,44 @@ function Home() {
         <h1>Test information about (two boxes, side by side)</h1>
       </div>
 
-      {/*<BentoGrid>
-        <BentoCard />
-      </BentoGrid>*/}
+      <BentoGrid className="max-w-4xl mx-auto my-12">
+        <BentoCard 
+          name="Distraction-Free Reading"
+          className="col-span-3 lg:col-span-1"
+          background={<div className="absolute inset-0 bg-gradient-to-br from-neutral-100 to-neutral-200 dark:from-neutral-900 dark:to-neutral-800" />}
+          Icon={ArrowRight}
+          description="Focus entirely on the content without annoying popups or ads."
+          href="/reader"
+          cta="Try it out"
+        />
+        <BentoCard 
+          name="Real-time Synchronization"
+          className="col-span-3 lg:col-span-2"
+          background={<div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800" />}
+          Icon={ArrowRight}
+          description="Your reading progress and saved articles sync instantly across all your devices."
+          href="/reader"
+          cta="Learn more"
+        />
+        <BentoCard 
+          name="Trusted sources only"
+          className="col-span-3 lg:col-span-2"
+          background={<AnimatedBeamMultipleOutputDemo className="absolute right-2 opacity-60" />}
+          Icon={ArrowRight}
+          description="Enjoy gorgeous typography, fluid animations, and a seamless dark mode."
+          href="/reader"
+          cta="See design"
+        />
+        <BentoCard 
+          name="Secure & Private"
+          className="col-span-3 lg:col-span-1"
+          background={<div className="absolute inset-0 bg-gradient-to-br from-green-100 to-green-200 dark:from-green-900 dark:to-green-800" />}
+          Icon={ArrowRight}
+          description="Your data is encrypted and protected by enterprise-grade security."
+          href="/reader"
+          cta="Read docs"
+        />
+      </BentoGrid>
       
       <Bottombar/>
     </>

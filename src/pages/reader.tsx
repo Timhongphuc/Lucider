@@ -29,7 +29,7 @@ function Reader() {
         </nav>
 
         <div className="readertitle">
-          <h1>Hey {user.firstName}! Ready to read? </h1>
+          <h1>Hey {user?.firstName}! Ready to read? </h1>
 
           <div className="dateSwitcher">
             <Button className="dateSwitchButton">

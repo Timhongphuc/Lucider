@@ -1,5 +1,5 @@
 import cloudsImg from "../assets/clouds.jpg";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Check, BookOpen, LayoutGrid, Bell } from "lucide-react";
 import { Show, UserButton } from "@clerk/react";
 import { Link } from "react-router-dom";
 import { Button } from "~/components/ui/button";
@@ -8,6 +8,9 @@ import Bottombar from "~/components/bottombar";
 import { EncryptedText } from "~/components/ui/encrypted-text";
 import { BentoGrid, BentoCard } from "~/components/ui/bento-grid";
 import { AnimatedBeamMultipleOutputDemo } from "~/components/ui/animated-beam-multiple-inputs";
+import { AnimatedListDemo } from "~/components/ui/animated-list-demo"
+import { MarqueeDemo } from "~/components/ui/marquee-demo"
+import { MorphingTextDemo } from "~/components/ui/morphing-text-demo"
 
 function Home() {
   return (
@@ -84,46 +87,46 @@ function Home() {
         }}/>
       </div>
 
-      <div className="howItWorksInformation-1">
+      {/*<div className="howItWorksInformation-1">
         <h1>Test information about (two boxes, side by side)</h1>
-      </div>
+      </div>*/}
 
       <BentoGrid className="max-w-4xl mx-auto my-12">
         <BentoCard 
-          name="Distraction-Free Reading"
+          name="4 focused categories."
           className="col-span-3 lg:col-span-1"
-          background={<div className="absolute inset-0 bg-gradient-to-br from-neutral-100 to-neutral-200 dark:from-neutral-900 dark:to-neutral-800" />}
-          Icon={ArrowRight}
-          description="Focus entirely on the content without annoying popups or ads."
+          background={<MarqueeDemo />}
+          Icon={LayoutGrid}
+          description="Get informed about Politics, Technology, Economy and War."
           href="/reader"
           cta="Try it out"
         />
         <BentoCard 
-          name="Real-time Synchronization"
+          name="Your morning brief is ready. Are you?"
           className="col-span-3 lg:col-span-2"
-          background={<div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800" />}
-          Icon={ArrowRight}
-          description="Your reading progress and saved articles sync instantly across all your devices."
+          background={<AnimatedListDemo className="absolute right-0 opacity-60 p-10" />}
+          Icon={Bell}
+          description="Get notified in order to never miss the latest headlines and news."
           href="/reader"
-          cta="Learn more"
+          cta="Activate notifications"
         />
         <BentoCard 
-          name="Trusted sources only"
+          name="Trusted sources only."
           className="col-span-3 lg:col-span-2"
           background={<AnimatedBeamMultipleOutputDemo className="absolute right-2 opacity-60" />}
-          Icon={ArrowRight}
-          description="Enjoy gorgeous typography, fluid animations, and a seamless dark mode."
+          Icon={Check}
+          description="Utilizing trustworthy sources like Reuters, NY Times, DW, BBC and WSJ while excluding sources like Reddit, Truthsocial, X or FoxNews."
           href="/reader"
           cta="See design"
         />
         <BentoCard 
-          name="Secure & Private"
+          name="Your news overview. Generated while you sleep."
           className="col-span-3 lg:col-span-1"
-          background={<div className="absolute inset-0 bg-gradient-to-br from-green-100 to-green-200 dark:from-green-900 dark:to-green-800" />}
-          Icon={ArrowRight}
-          description="Your data is encrypted and protected by enterprise-grade security."
+          background={<MorphingTextDemo />}
+          Icon={BookOpen}
+          description="Triggered by an automatic on-server chronjob, the AI summaries are ready whenever you are."
           href="/reader"
-          cta="Read docs"
+          cta="Learn more"
         />
       </BentoGrid>
       

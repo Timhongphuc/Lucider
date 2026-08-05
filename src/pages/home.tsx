@@ -5,9 +5,7 @@ import { Link } from "react-router-dom";
 import { Button } from "~/components/ui/button";
 import timselfie from "../assets/selfietim.jpg";
 import Bottombar from "~/components/bottombar";
-import { BentoCard, BentoGrid } from "../components/ui/bento-grid"
 import { EncryptedText } from "~/components/ui/encrypted-text";
-import React from "react";
 
 function Home() {
   return (

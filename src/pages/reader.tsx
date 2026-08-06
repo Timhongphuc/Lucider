@@ -5,7 +5,7 @@ import { ArrowRight, ArrowLeft } from "lucide-react";
 import Bottombar from "~/components/bottombar";
 import { useUser } from '@clerk/react'
 import { AnimatedTestimonials } from "~/components/ui/animated-testimonials";
-import { FcGoogle } from "react-icons/fc";
+{/*import { FcGoogle } from "react-icons/fc";*/}
 
 function Reader() {
 

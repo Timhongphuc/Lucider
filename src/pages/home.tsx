@@ -11,6 +11,7 @@ import { AnimatedBeamMultipleOutputDemo } from "~/components/ui/animated-beam-mu
 import { AnimatedListDemo } from "~/components/ui/animated-list-demo"
 import { MarqueeDemo } from "~/components/ui/marquee-demo"
 import { MorphingTextDemo } from "~/components/ui/morphing-text-demo"
+import { Analytics } from "@vercel/analytics/next"
 
 function Home() {
   return (
@@ -36,6 +37,8 @@ function Home() {
         </Show>
       </nav>
 
+      <Analytics />
+      
       <div className="maintitle">
         <h1>Organizing the world's happenings in one place.</h1>
       </div>
@@ -47,8 +50,12 @@ function Home() {
           </Button>
         </Link>{" "}
 
-        
-        <Button className="btnSecondary">See how it works <ArrowRight size={18}/> </Button>
+        <Button 
+          className="btnSecondary"
+          onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
+        >
+          See how it works <ArrowRight size={18}/> 
+        </Button>
       </div>
 
       <div className="maindiv">
@@ -91,44 +98,46 @@ function Home() {
         <h1>Test information about (two boxes, side by side)</h1>
       </div>*/}
 
-      <BentoGrid className="max-w-4xl mx-auto my-12">
-        <BentoCard 
-          name="4 focused categories."
-          className="col-span-3 lg:col-span-1"
-          background={<MarqueeDemo />}
-          Icon={LayoutGrid}
-          description="Get informed about Politics, Technology, Economy and War."
-          href="/reader"
-          cta="Try it out"
-        />
-        <BentoCard 
-          name="Your morning brief is ready. Are you?"
-          className="col-span-3 lg:col-span-2"
-          background={<AnimatedListDemo className="absolute right-0 opacity-60 p-10" />}
-          Icon={Bell}
-          description="Get notified in order to never miss the latest headlines and news."
-          href="/reader"
-          cta="Activate notifications"
-        />
-        <BentoCard 
-          name="Trusted sources only."
-          className="col-span-3 lg:col-span-2"
-          background={<AnimatedBeamMultipleOutputDemo className="absolute right-2 opacity-60" />}
-          Icon={Check}
-          description="Utilizing trustworthy sources like Reuters, NY Times, DW, BBC and WSJ while excluding sources like Reddit, Truthsocial, X or FoxNews."
-          href="/reader"
-          cta="See design"
-        />
-        <BentoCard 
-          name="Your news overview. Generated while you sleep."
-          className="col-span-3 lg:col-span-1"
-          background={<MorphingTextDemo />}
-          Icon={BookOpen}
-          description="Triggered by an automatic on-server chronjob, the AI summaries are ready whenever you are."
-          href="/reader"
-          cta="Learn more"
-        />
-      </BentoGrid>
+      <section id="features">
+        <BentoGrid className="max-w-4xl mx-auto my-12">
+          <BentoCard 
+            name="4 focused categories."
+            className="col-span-3 lg:col-span-1"
+            background={<MarqueeDemo />}
+            Icon={LayoutGrid}
+            description="Get informed about Politics, Technology, Economy and War."
+            href="/reader"
+            cta="Try it out"
+          />
+          <BentoCard 
+            name="Your morning brief is ready. Are you?"
+            className="col-span-3 lg:col-span-2"
+            background={<AnimatedListDemo className="absolute right-0 opacity-60 p-10" />}
+            Icon={Bell}
+            description="Get notified in order to never miss the latest headlines and news."
+            href="/reader"
+            cta="Activate notifications"
+          />
+          <BentoCard 
+            name="Trusted sources only."
+            className="col-span-3 lg:col-span-2"
+            background={<AnimatedBeamMultipleOutputDemo className="absolute right-2 opacity-60" />}
+            Icon={Check}
+            description="Utilizing trustworthy sources like Reuters, NY Times, DW, BBC and WSJ while excluding sources like Reddit, Truthsocial, X or FoxNews."
+            href="/reader"
+            cta="See design"
+          />
+          <BentoCard 
+            name="Your news overview. Generated while you sleep."
+            className="col-span-3 lg:col-span-1"
+            background={<MorphingTextDemo />}
+            Icon={BookOpen}
+            description="Triggered by an automatic on-server chronjob, the AI summaries are ready whenever you are."
+            href="/reader"
+            cta="Learn more"
+          />
+        </BentoGrid>
+      </section>
       
       <Bottombar/>
     </>

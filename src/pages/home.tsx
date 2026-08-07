@@ -11,7 +11,6 @@ import { AnimatedBeamMultipleOutputDemo } from "~/components/ui/animated-beam-mu
 import { AnimatedListDemo } from "~/components/ui/animated-list-demo"
 import { MarqueeDemo } from "~/components/ui/marquee-demo"
 import { MorphingTextDemo } from "~/components/ui/morphing-text-demo"
-import { Analytics } from "@vercel/analytics/next"
 
 function Home() {
   return (
@@ -36,8 +35,6 @@ function Home() {
           </div>  
         </Show>
       </nav>
-
-      <Analytics />
       
       <div className="maintitle">
         <h1>Organizing the world's happenings in one place.</h1>

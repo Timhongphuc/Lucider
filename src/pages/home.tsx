@@ -116,7 +116,7 @@ function Home() {
             cta="Activate notifications"
           />
           <BentoCard 
-            name="Trusted sources only."
+            name="Focusing on trusted sources."
             className="col-span-3 lg:col-span-2"
             background={<AnimatedBeamMultipleOutputDemo className="absolute right-2 opacity-60" />}
             Icon={Check}

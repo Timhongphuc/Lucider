@@ -10,6 +10,7 @@ type Testimonial = {
   name: string;
   designation?: string;
   src: string;
+  sources?: string[];
 };
 export const AnimatedTestimonials = ({
   testimonials,

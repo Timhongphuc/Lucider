@@ -23,6 +23,7 @@ function Reader() {
   const [technologyText, setTechnologyText] = useState("Fetching the latest news, just for you...");
   const [economyText, setEconomyText] = useState("Fetching the latest news, just for you...");
   const [warText, setWarText] = useState("Fetching the latest news, just for you...");
+  const [dateTime, setDateTime] = useState("...");
 
   useEffect(() => {
     async function pullNews() {
@@ -44,13 +45,15 @@ function Reader() {
         setTechnologyText(data.technology)
         setEconomyText(data.economy)
         setWarText(data.war)
+        setDateTime(data.created_at)
       }
     }
 
     pullNews();
   }, []); // Empty array means run once on page load
 
-
+  
+  
   
   return (
     <>
@@ -78,15 +81,15 @@ function Reader() {
           <p className="ainotice">AI can make mistakes. Please double-check critical information manually.</p>
 
           <div className="dateSwitcher">
-            <Button className="dateSwitchButton">
+            {/*<Button className="dateSwitchButton">
               {" "}
               <ArrowLeft size={18} />{" "}
-            </Button>
-            <p className="reader-date">03/08/2026</p>
-            <Button className="dateSwitchButton">
+            </Button>*/}
+            <p className="reader-date">{dateTime}</p>
+            {/*<Button className="dateSwitchButton">
               {" "}
               <ArrowRight size={18} />{" "}
-            </Button>
+            </Button>*/}
           </div>
         </div>
 
@@ -162,6 +165,10 @@ function Reader() {
           />
 
           {/*<Button onClick={()=> href="" target="_blank"}> <FcGoogle /> Check via AI Overview</Button>*/}
+        </div>
+
+        <div>
+          
         </div>
         
         <Bottombar/>

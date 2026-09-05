@@ -81,15 +81,15 @@ function Reader() {
           <p className="ainotice">AI can make mistakes. Please double-check critical information manually.</p>
 
           <div className="dateSwitcher">
-            {/*<Button className="dateSwitchButton">
+            <Button className="dateSwitchButton">
               {" "}
               <ArrowLeft size={18} />{" "}
-            </Button>*/}
+            </Button>
             <p className="reader-date">{dateTime}</p>
-            {/*<Button className="dateSwitchButton">
+            <Button className="dateSwitchButton">
               {" "}
               <ArrowRight size={18} />{" "}
-            </Button>*/}
+            </Button>
           </div>
         </div>
 
